@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>300x250 Ad Banner - Owl Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .ad-container {
+      width: 300px;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .owl-carousel .item img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* ✅ Navigation buttons */
+    .owl-nav button.owl-prev,
+    .owl-nav button.owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.4) !important;
+      color: #fff !important;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 18px !important;
+      transition: 0.3s;
+    }
+
+    .owl-nav button.owl-prev:hover,
+    .owl-nav button.owl-next:hover {
+      background: rgba(0, 0, 0, 0.7) !important;
+    }
+
+    .owl-nav button.owl-prev {
+      left: 5px;
+    }
+
+    .owl-nav button.owl-next {
+      right: 5px;
+    }
+
+    .owl-dots {
+      display: none !important;
+    }
+
+    @media (max-width: 400px) {
+      .ad-container {
+        width: 300px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ad-container">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <a href="https://google.com" target="_blank">
+          <img src="https://ik.imagekit.io/gku4adhog/answerlocate/Top%205%20Benefits%20of%20Artificial%20Intelligence%20Tools.jpg?updatedAt=1755849367406" alt="Ad 1">
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://google.com" target="_blank">
+          <img src="https://ik.imagekit.io/gku4adhog/answerlocate/5%20Real-Time%20AI%20Applications%20Transforming%20the%20World%20of%20Today.jpg?updatedAt=1755849207391" alt="Ad 2">
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://google.com" target="_blank">
+          <img src="https://ik.imagekit.io/gku4adhog/answerlocate/7%20Artificial%20Intelligence%20Skills%20for%20Today_s%20Digital%20Age.jpg?updatedAt=1755848860966" alt="Ad 3">
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://google.com" target="_blank">
+          <img src="https://ik.imagekit.io/gku4adhog/answerlocate/LLMvsGenAIWhatstheRealDifference.jpg?updatedAt=1755848618556" alt="Ad 4">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 2500,
+      autoplayHoverPause: true,
+      items: 1,
+      navText: ['‹', '›']
+    });
+  </script>
+</body>
+</html>
